@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度热榜</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top {
+            width: 310px;
+            border: 1px #dadadc solid;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+
+        .title {
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            margin-left: 16px;
+        }
+        .list {
+            height: 350px;
+            margin: 0 14px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+              "a1 a2 a2"
+              "a3 a2 a2"
+              "a4 a4 a5"
+              "a6 a7 a7";
+            gap: 8px 8px;
+        }
+        .list div:nth-of-type(1) {
+            grid-area: a1;
+        }
+        .list div:nth-of-type(2) {
+            grid-area: a2;
+        }
+        .list div:nth-of-type(3) {
+            grid-area: a3;
+        }
+        .list div:nth-of-type(4) {
+            grid-area: a4;
+        }
+        .list div:nth-of-type(5) {
+            grid-area: a5;
+        }
+        .list div:nth-of-type(6) {
+            grid-area: a6;
+        }
+        .list div:nth-of-type(7) {
+            grid-area: a7;
+        }
+        .theme1 {
+            background-image: linear-gradient(#187fe6, #32aff2);
+            border: 2px solid #299bda;
+        }
+        .theme2 {
+            background-image: linear-gradient(#f2246c, #fe5bac);
+            border: 2px solid #dc1f61;
+        }
+        .theme3 {
+            background-image: linear-gradient(#d46300, #e5ad1c);
+            border: 2px solid #d39818;
+        }
+
+        .page {
+            height: 40px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .page span {
+            padding: 4px;
+        }
+        .page a {
+            text-decoration: none;
+            display: block;
+            border: 1px solid #cccccc;
+            padding: 5px 4px;
+            margin-left: 2px;
+        }
+        .list a {
+            text-decoration: none;
+            display: block;
+            color: white;
+            width: 100%;
+            height: 100%;
+            line-height: 30px;
+        }
+
+        .list a > h3 {
+            margin-right: 4px;
+            text-align: right;
+        }
+
+        .list a > p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <div class="top">
+         <div class="title">
+             今日热榜
+         </div>
+         <div class="list">
+             <div class="theme1">
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+             </div>
+             <div class="theme1">                 
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+                </div>
+             <div class="theme2">                 
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+                </div>
+             <div class="theme1">                 
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+                </div>
+             <div class="theme1">                 
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+                </div>
+             <div class="theme3">                 
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+                </div>
+             <div class="theme3">                 
+                <a href="#">
+                    <h3>实时热点</h3>
+                    <p>阿里第一颗芯</p>
+                </a>
+                </div>
+         </div>
+         <div class="page">
+             <span>1</span>
+             <a href="#">2</a>
+             <a href="#">3</a>
+         </div>
+     </div> 
+</body>
+</html>
