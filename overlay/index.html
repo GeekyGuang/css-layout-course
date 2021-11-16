@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叠加</title>
+    <style>
+        .box {
+            display: grid;
+            width: 500px;
+            height: 300px;
+        }
+        img {
+            grid-area: 1/1/1/1;
+        }
+        span {
+            grid-area: 1/1/1/1;
+            justify-self: end;
+            align-self: start;
+            background: greenyellow;
+            margin-top: 20px;
+        }
+        p { 
+            margin: 0;
+            padding: 0 20px 0 0;
+            align-self: end;
+            grid-area: 1/1/1/1;
+            background: rgba(0,0,0,.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./phone.png" alt="">
+        <span>直播</span>
+        <p>促销热卖中...</p>
+    </div>
+</body>
+</html>
