@@ -37,6 +37,11 @@
       padding: 0 0.1rem;
     }
 
+    .header-logo {
+      display: flex;
+      align-items: center;
+    }
+
     .iconfont {
       font-size: 0.18rem;
     }
@@ -116,27 +121,30 @@
     .news-title {
       line-height: 66px;
       font-size: 18px;
-      text-align: middle;
     }
 
     .news-item {
       margin-bottom: 25px;
     }
 
-    .news-item-title {
+    .news-item-title,
+    .news2-item-title {
       font-size: 16px;
       font-weight: 500;
       line-height: 22px;
-      text-align: middle;
       margin-bottom: 7px;
+    }
+
+    .news-item-title {
       margin-right: 22px;
     }
 
-    .news-item-info {
+
+    .news-item-info,
+    .news2-item-info-wrapper {
       font-size: 14px;
       color: #b5b0b7;
       line-height: 16px;
-      text-align: middle;
     }
 
     .news-img {
@@ -145,6 +153,41 @@
 
     .news-img>img {
       width: 100%;
+    }
+
+    .news2 {
+      padding: 12px 10px;
+      border-bottom: 0.5px solid #f7f7f7;
+      display: flex;
+    }
+
+    .new2-item-img {
+      width: 117px;
+      flex-shrink: 0;
+    }
+
+    .new2-item-img>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news2-item-wrapper {
+      flex-grow: 1;
+    }
+
+    .news2-item-info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .news2-item-info-wrapper>.app {
+      border: 0.5px #fbbebc solid;
+      color: #e71d1d;
+      border-radius: 10px;
+      padding: 2px 5px;
+      margin-right: 6px;
     }
   </style>
 </head>
@@ -199,6 +242,30 @@
       <h2 class="news-item-title">测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题</h2>
       <div class="news-img"><img src="./img/news.jpg" alt=""></div>
       <p class="news-item-info">央视网 1小时前 879跟帖</p>
+    </div>
+  </div>
+  <div class="news2">
+    <div class="news2-item-wrapper">
+      <h2 class="news2-item-title">测试标题测试标题</h2>
+      <div class="news2-item-info-wrapper">
+        <span class="news2-item-info-wrapper">上游新闻 2287跟帖</span>
+        <div class="app">打开APP</div>
+      </div>
+    </div>
+    <div class="new2-item-img">
+      <img src="./img/news2.jpg" alt="">
+    </div>
+  </div>
+  <div class="news2">
+    <div class="news2-item-wrapper">
+      <h2 class="news2-item-title">测试标题测试标题测试标题测试标题测试标题测试标题测试</h2>
+      <div class="news2-item-info-wrapper">
+        <span class="news2-item-info-wrapper">上游新闻 2287跟帖</span>
+        <div class="app">打开APP</div>
+      </div>
+    </div>
+    <div class="new2-item-img">
+      <img src="./img/news3.jpg" alt="">
     </div>
   </div>
 </body>
