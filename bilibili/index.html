@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilibili</title>
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      color: #f77199;
+      height: 44px;
+      margin-bottom: 4px;
+    }
+
+    .logo>i {
+      font-size: 29px;
+    }
+
+    .logo {
+      padding: 4px;
+      margin-right: auto;
+    }
+
+    .login {
+      line-height: 30px;
+      font-size: 8px;
+      height: 30px;
+      width: 30px;
+      background: #e8e8e8;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 20px;
+      white-space: nowrap;
+    }
+
+    .download {
+      line-height: 26px;
+      font-size: 16px;
+      height: 26px;
+      padding: 0 10px;
+      background: #fb7399;
+      color: white;
+      margin-right: 2px;
+      margin-left: 20px;
+      border-radius: 3px;
+    }
+
+    .search>i {
+      font-size: 19px;
+      color: #cfcbca;
+    }
+
+    nav {
+      font-size: 16px;
+      position: relative;
+      padding: 0 10px;
+      overflow: hidden;
+      border-bottom: 0.5px solid #f3f3f3;
+    }
+
+    .nav-items {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-items>li {
+      padding: 10px 6px;
+      flex-shrink: 0;
+    }
+
+    .nav-items>li.active {
+      color: #f97398;
+      position: relative;
+    }
+
+    .nav-items>li.active::after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #f97398;
+    }
+
+    .nav-items>li+li {
+      margin-left: 14px;
+    }
+
+    nav>.down-arrow {
+      width: 40px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="iconfont icon-BILIBILI_LOGO"></i>
+    </div>
+    <div class="search">
+      <i class="iconfont icon-fangdajing"></i>
+    </div>
+    <div class="login">
+      登陆
+    </div>
+    <div class="download">
+      下载 App
+    </div>
+  </header>
+  <nav>
+    <ul class="nav-items">
+      <li class="active">首页</li>
+      <li>动画</li>
+      <li>番剧</li>
+      <li>国创</li>
+      <li>音乐</li>
+      <li>舞蹈</li>
+      <li>舞蹈</li>
+      <li>舞蹈</li>
+      <li>舞蹈</li>
+      <li>舞蹈</li>
+    </ul>
+    <div class="down-arrow">
+      <i class="iconfont icon-arrow-bottom"></i>
+    </div>
+  </nav>
+</body>
+
+</html>
