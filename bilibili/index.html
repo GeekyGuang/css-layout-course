@@ -120,6 +120,40 @@
       align-items: center;
       justify-content: center;
     }
+
+    main {
+      padding: 8px 10px 0 10px;
+    }
+    .video-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .video-cover > img {
+      width: 100%;
+      max-height: 97px;
+      object-fit: cover;
+    }
+
+    .video {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .video > .video-cover {
+      grid-area: 1/1/1/1;
+    }
+
+    .video > .info {
+      grid-area: 1/1/1/1;
+      color: white;
+      align-self: end;
+      padding: 8px 7px;
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
 </head>
 
@@ -155,6 +189,118 @@
       <i class="iconfont icon-arrow-bottom"></i>
     </div>
   </nav>
+  <main>
+    <ul class="video-content">
+      <li>
+        <div class="video">
+           <div class="video-cover"><img src="./img/video1.jpg" alt=""></div>
+           <div class="info">
+             <span class="views">
+               <i class="iconfont icon-703bofang-fangxing-xianxing"></i>
+               <span> 73.7万</span>
+             </span>
+             <span class="comments">
+               <i class="iconfont icon-xinxi"></i>
+               <span> 5591</span>
+             </span>
+           </div>
+        </div>
+        <div class="title">
+          史上最骚魔法师 (第二集)
+        </div>
+      </li>
+      <li>
+        <div class="video">
+           <div class="video-cover"><img src="./img/video2.jpg" alt=""></div>
+           <div class="info">
+             <span class="views">
+               <i class="iconfont icon-703bofang-fangxing-xianxing"></i>
+               <span> 73.7万</span>
+             </span>
+             <span class="comments">
+               <i class="iconfont icon-xinxi"></i>
+               <span> 5591</span>
+             </span>
+           </div>
+        </div>
+        <div class="title">
+          史上最骚魔法师 (第二集)
+        </div>
+      </li>
+      <li>
+        <div class="video">
+           <div class="video-cover"><img src="./img/video3.jpg" alt=""></div>
+           <div class="info">
+             <span class="views">
+               <i class="iconfont icon-703bofang-fangxing-xianxing"></i>
+               <span> 73.7万</span>
+             </span>
+             <span class="comments">
+               <i class="iconfont icon-xinxi"></i>
+               <span> 5591</span>
+             </span>
+           </div>
+        </div>
+        <div class="title">
+          史上最骚魔法师 (第二集)
+        </div>
+      </li>
+      <li>
+        <div class="video">
+           <div class="video-cover"><img src="./img/video4.jpg" alt=""></div>
+           <div class="info">
+             <span class="views">
+               <i class="iconfont icon-703bofang-fangxing-xianxing"></i>
+               <span> 73.7万</span>
+             </span>
+             <span class="comments">
+               <i class="iconfont icon-xinxi"></i>
+               <span> 5591</span>
+             </span>
+           </div>
+        </div>
+        <div class="title">
+          史上最骚魔法师 (第二集)
+        </div>
+      </li>
+      <li>
+        <div class="video">
+           <div class="video-cover"><img src="./img/video5.jpg" alt=""></div>
+           <div class="info">
+             <span class="views">
+               <i class="iconfont icon-703bofang-fangxing-xianxing"></i>
+               <span> 73.7万</span>
+             </span>
+             <span class="comments">
+               <i class="iconfont icon-xinxi"></i>
+               <span> 5591</span>
+             </span>
+           </div>
+        </div>
+        <div class="title">
+          史上最骚魔法师 (第二集)
+        </div>
+      </li>
+      <li>
+        <div class="video">
+           <div class="video-cover"><img src="./img/video6.jpg" alt=""></div>
+           <div class="info">
+             <span class="views">
+               <i class="iconfont icon-703bofang-fangxing-xianxing"></i>
+               <span> 73.7万</span>
+             </span>
+             <span class="comments">
+               <i class="iconfont icon-xinxi"></i>
+               <span> 5591</span>
+             </span>
+           </div>
+        </div>
+        <div class="title">
+          史上最骚魔法师 (第二集)
+        </div>
+      </li>
+    </ul>
+  </main>
 </body>
 
 </html>
