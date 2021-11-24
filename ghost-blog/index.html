@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Blog</title>
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    body {
+      background: #ebebeb;
+    }
+
+    .head {
+      height: 190px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1px;
+    }
+
+    .head>img {
+      width: 200px;
+    }
+
+    .nav {
+      background: #fff;
+      border-bottom: 2px solid #e1e1e1;
+      padding: 0 16px;
+    }
+
+    .menu-icon {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-icon i {
+      cursor: pointer;
+    }
+
+    .menu-items>li {
+      height: 56px;
+      padding: 0 20px;
+      line-height: 56px;
+    }
+
+    .menu-items>li.active {
+      position: relative;
+    }
+
+    .menu-items>li.active::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: #e67e22;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .menu-items,
+    #menu-input {
+      display: none;
+    }
+
+    #menu-input:checked+.menu-items {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .menu-icon {
+        display: none;
+      }
+
+      .menu-items {
+        display: flex !important;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <img src="./img/ghost-logo.png" alt="">
+  </div>
+  <div class="nav">
+    <div class="menu-icon">
+      <label for="menu-input">
+        <i class="iconfont icon-zhedie"></i>
+      </label>
+    </div>
+    <input id="menu-input" type="checkbox">
+    <ul class="menu-items">
+      <li class="active">首页</li>
+      <li>论坛</li>
+      <li>快捷手册</li>
+      <li>中文文档</li>
+      <li>关于</li>
+    </ul>
+  </div>
+</body>
+
+</html>
