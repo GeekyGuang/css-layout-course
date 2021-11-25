@@ -88,6 +88,103 @@
       display: block;
     }
 
+    main {
+      padding: 0 16px;
+      line-height: 1.5;
+    }
+
+    .article,
+    .other {
+      margin-top: 35px;
+      padding: 35px;
+      background: #fff;
+    }
+
+    .article>h2 {
+      font-size: 35px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #959595;
+      text-align: center;
+    }
+
+    .article>p {
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .article>button {
+      border: none;
+      background: #e67e22;
+      font-size: 14px;
+      padding: 10px;
+      color: white;
+      margin: 30px 0;
+    }
+
+    .article>section {
+      border-top: 1px solid #ebebeb;
+      font-size: 14px;
+      color: #505050;
+      padding-top: 20px;
+    }
+
+    .article>section>span {
+      margin-left: 6px;
+    }
+
+    .others h2 {
+      font-size: 20px;
+      font-weight: normal;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 8px;
+      position: relative;
+    }
+
+    .others h2::after {
+      position: absolute;
+      content: '';
+      display: block;
+      left: 0;
+      bottom: -1px;
+      width: 100px;
+      height: 1px;
+      background: #e67e22;
+    }
+
+    .others p {
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    .download>button {
+      width: 100%;
+      border: none;
+      background: #e67e22;
+      font-size: 14px;
+      padding: 10px;
+      color: white;
+      margin-top: 30px;
+    }
+
+    .button-wrapper {
+      padding-top: 20px;
+    }
+
+    .button-wrapper>button {
+      border: 1px solid #ebebeb;
+      color: #505050;
+      font-size: 14px;
+      line-height: 30px;
+      padding: 0 10px;
+      background: white;
+      margin: 10px 8px 0 0;
+    }
+
     @media (min-width: 768px) {
       .menu-icon {
         display: none;
@@ -96,6 +193,33 @@
       .menu-items {
         display: flex !important;
         justify-content: center;
+      }
+    }
+
+    @media (min-width: 992px) {
+      main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 0;
+        column-gap: 30px;
+      }
+
+      main>.articles {
+        grid-area: auto/auto/auto/span 8;
+      }
+
+      main>.others {
+        grid-area: auto/auto/auto/span 4;
+      }
+
+
+    }
+
+    @media (min-width: 1200px) {
+      main {
+        max-width: 1100px;
       }
     }
   </style>
@@ -120,6 +244,99 @@
       <li>关于</li>
     </ul>
   </div>
+  <main>
+    <div class="articles">
+      <div class="article">
+        <h2>全新的 Ghost 文档上线</h2>
+        <div class="info">
+          <span>作者：王赛</span>•<span>2018年11月20日</span>
+        </div>
+        <p>我们的整个 Ghost 文档 已经全新改版了！并且添加了一些新的补充，包括使用教程和功能集成。 新文档的目标是帮助更多人有效地安装并管理他们发布的内容，并且最大限度地发挥 Ghost
+          作为一个开源发布平台的灵活性。文档的设计和结构已经修订完毕，我们的改进包括 Ghost 安装和设</p>
+        <button>阅读全文</button>
+        <section>
+          <i class="iconfont icon-wenjianjia"></i>
+          <span><a href="#">Android</a></span>,
+          <span><a href="#">客户端</a></span>
+        </section>
+      </div>
+      <div class="article">
+        <h2>全新的 Ghost 文档上线</h2>
+        <div class="info">
+          <span>作者：王赛</span>•<span>2018年11月20日</span>
+        </div>
+        <p>我们的整个 Ghost 文档 已经全新改版了！并且添加了一些新的补充，包括使用教程和功能集成。 新文档的目标是帮助更多人有效地安装并管理他们发布的内容，并且最大限度地发挥 Ghost
+          作为一个开源发布平台的灵活性。文档的设计和结构已经修订完毕，我们的改进包括 Ghost 安装和设</p>
+        <button>阅读全文</button>
+        <section>
+          <i class="iconfont icon-wenjianjia"></i>
+          <span><a href="#">Android</a></span>,
+          <span><a href="#">客户端</a></span>
+        </section>
+      </div>
+      <div class="article">
+        <h2>全新的 Ghost 文档上线</h2>
+        <div class="info">
+          <span>作者：王赛</span>•<span>2018年11月20日</span>
+        </div>
+        <p>我们的整个 Ghost 文档 已经全新改版了！并且添加了一些新的补充，包括使用教程和功能集成。 新文档的目标是帮助更多人有效地安装并管理他们发布的内容，并且最大限度地发挥 Ghost
+          作为一个开源发布平台的灵活性。文档的设计和结构已经修订完毕，我们的改进包括 Ghost 安装和设</p>
+        <button>阅读全文</button>
+        <section>
+          <i class="iconfont icon-wenjianjia"></i>
+          <span><a href="#">Android</a></span>,
+          <span><a href="#">客户端</a></span>
+        </section>
+      </div>
+      <div class="article">
+        <h2>全新的 Ghost 文档上线</h2>
+        <div class="info">
+          <span>作者：王赛</span>•<span>2018年11月20日</span>
+        </div>
+        <p>我们的整个 Ghost 文档 已经全新改版了！并且添加了一些新的补充，包括使用教程和功能集成。 新文档的目标是帮助更多人有效地安装并管理他们发布的内容，并且最大限度地发挥 Ghost
+          作为一个开源发布平台的灵活性。文档的设计和结构已经修订完毕，我们的改进包括 Ghost 安装和设</p>
+        <button>阅读全文</button>
+        <section>
+          <i class="iconfont icon-wenjianjia"></i>
+          <span><a href="#">Android</a></span>,
+          <span><a href="#">客户端</a></span>
+        </section>
+      </div>
+    </div>
+    <div class="others">
+      <div class="other statement">
+        <h2>声明</h2>
+        <p>Ghost 中文版不再继续维护，请去官方下载。</p>
+      </div>
+      <div class="other download">
+        <h2>下载</h2>
+        <button>Ghost最新版</button>
+      </div>
+      <div class="other tags">
+        <h2>标签云</h2>
+        <div class="button-wrapper">
+          <button>客户端</button>
+          <button>Android</button>
+          <button>jQuery</button>
+          <button>Ghost 0.7 版本</button>
+          <button>开源</button>
+          <button>助手函数</button>
+          <button>客户端</button>
+          <button>Android</button>
+          <button>jQuery</button>
+          <button>Ghost 0.7 版本</button>
+          <button>开源</button>
+          <button>助手函数</button>
+          <button>客户端</button>
+          <button>Android</button>
+          <button>jQuery</button>
+          <button>Ghost 0.7 版本</button>
+          <button>开源</button>
+          <button>助手函数</button>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
