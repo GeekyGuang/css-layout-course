@@ -185,6 +185,60 @@
       margin: 10px 8px 0 0;
     }
 
+    footer {
+      height: 80px;
+      font-size: 14px;
+      color: #555555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111111;
+    }
+
+    .links-wrapper {
+      background: #202020;
+      margin-top: 35px;
+    }
+
+    .links {
+      padding: 30px;
+
+      color: #959595;
+    }
+
+    .links h2 {
+      font-size: 22px;
+      font-weight: 500;
+      color: white;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 4px;
+      position: relative;
+    }
+
+    .links h2::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100px;
+      height: 1px;
+      background: #e67e22;
+    }
+
+    .links ul {
+      padding: 5px 10px 0 10px;
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .links ul>li {
+      white-space: nowrap;
+      margin-right: 25px;
+      margin-top: 25px;
+    }
+
     @media (min-width: 768px) {
       .menu-icon {
         display: none;
@@ -214,12 +268,30 @@
         grid-area: auto/auto/auto/span 4;
       }
 
+      .links {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 30px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .link-exchange,
+      .partner,
+      .tag-cloud {
+        grid-area: auto/auto/auto/ span 4;
+      }
+
 
     }
 
     @media (min-width: 1200px) {
       main {
         max-width: 1100px;
+      }
+
+      .links {
+        max-width: 1200px;
       }
     }
   </style>
@@ -337,6 +409,57 @@
       </div>
     </div>
   </main>
+  <div class="links-wrapper">
+    <div class="links">
+      <div class="link-exchange">
+        <h2>友链</h2>
+        <ul>
+          <li><a href="#">Bootstrap中文网</a></li>
+          <li><a href="#">React</a></li>
+          <li><a href="#">Vue.js</a></li>
+          <li><a href="#">Svelte</a></li>
+          <li><a href="#">Preact</a></li>
+          <li><a href="#">Babel</a></li>
+          <li><a href="#">Webpack</a></li>
+          <li><a href="#">Bootstrap中文网</a></li>
+          <li><a href="#">React</a></li>
+          <li><a href="#">Vue.js</a></li>
+          <li><a href="#">Svelte</a></li>
+          <li><a href="#">Preact</a></li>
+          <li><a href="#">Babel</a></li>
+          <li><a href="#">Webpack</a></li>
+        </ul>
+      </div>
+      <div class="tag-cloud">
+        <h2>标签云</h2>
+        <ul>
+          <li><a href="#">客户端</a></li>
+          <li><a href="#">助手函数</a></li>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="#">Ghost 0.7 版本</a></li>
+          <li><a href="#">开源</a></li>
+          <li><a href="#">客户端</a></li>
+          <li><a href="#">助手函数</a></li>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="#">Ghost 0.7 版本</a></li>
+          <li><a href="#">开源</a></li>
+        </ul>
+      </div>
+      <div class="partner">
+        <h2>合作伙伴</h2>
+        <ul>
+          <li><a href="#">阿里云</a></li>
+          <li><a href="#">腾讯</a></li>
+          <li><a href="#">字节跳动</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span>Copyright © Ghost中文网 | 京ICP备11008151号-11 | 京公网安备11010802014853</span>
+  </footer>
 </body>
 
 </html>
